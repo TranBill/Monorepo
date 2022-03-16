@@ -1,0 +1,19 @@
+{
+  "name": "@bill/shared",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^17.0.40",
+    "react": "^17.0.2",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "react-native": "^0.67.3",
+    "react-native-web": "^0.17.7"
+  }
+}

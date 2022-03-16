@@ -1,0 +1,22 @@
+{
+  "name": "@bill/drawer",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@react-navigation/drawer": "^6.3.1",
+    "@react-navigation/native": "^6.0.8",
+    "react-native-gesture-handler": "^2.3.2",
+    "react-native-reanimated": "^2.4.1",
+    "react-native-safe-area-context": "^4.2.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.40",
+    "react": "^17.0.2",
+    "typescript": "^4.6.2"
+  }
+}

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
+import Styles from './styles';
+import { Text, View } from 'react-native';
 
 const Viewtext =()=>{
     return(
@@ -10,12 +11,4 @@ const Viewtext =()=>{
     </View>
     )
 }
-const Styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  });
 export default Viewtext;

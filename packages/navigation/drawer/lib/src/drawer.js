@@ -4,12 +4,13 @@ import { Octicons, Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { AttendanceScreen } from './screens/index';
-import { DrawerContent } from '@react-navigation/drawer';
+import { DrawerContent } from '../utils/DrawerContent';
+import { MaterialIcon } from '../utils/Icons';
 import Styles from './styles';
 const Drawer = createDrawerNavigator();
 const DrawerTab = () => {
     return (React.createElement(NavigationContainer, null,
-        React.createElement(Drawer.Navigator, { screenOptions: { headerShown: true }, drawerContent: (props) => React.createElement(DrawerContent, { ...props }) },
+        React.createElement(Drawer.Navigator, { screenOptions: { headerShown: true }, drawerContent: (props) => React.createElement(DrawerContent, { children: undefined, ...props }) },
             React.createElement(Drawer.Screen, { name: "Attendance", component: AttendanceScreen, options: ({ navigation }) => ({
                     headerLeft: () => (React.createElement(View, null,
                         React.createElement(TouchableOpacity, { style: Styles.header_left, onPress: () => navigation.openDrawer() },
@@ -18,6 +19,8 @@ const DrawerTab = () => {
                         React.createElement(View, { style: Styles.header_right },
                             React.createElement(TouchableOpacity, null,
                                 React.createElement(Feather, { name: "bell", size: 32, color: "black" })),
+                            React.createElement(TouchableOpacity, null,
+                                React.createElement(MaterialIcon, { size: "extraLarge", color: "black", name: "apps" })),
                             React.createElement(TouchableOpacity, null,
                                 React.createElement(MaterialCommunityIcons, { name: "account-circle", size: 35, color: "lightgray" }))))),
                     headerTitle: () => (React.createElement(View, { style: Styles.header_title },

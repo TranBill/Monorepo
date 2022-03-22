@@ -22,7 +22,8 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "transformIgnorePatterns":[]
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.16.7",

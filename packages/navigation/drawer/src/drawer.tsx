@@ -5,9 +5,9 @@ import { Octicons, Feather, MaterialCommunityIcons } from "@expo/vector-icons";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
-import {AttendanceScreen} from './screens/index';
-import { DrawerContent } from '../utils/DrawerContent';
-import {MaterialIcon} from '../utils/Icons'
+import {AttendanceScreen, Calendarscreen, Profilescreen, Dailyreport} from './screens/index';
+import { DrawerContent } from './Widgets/DrawerContent';
+import {MaterialIcon} from './Widgets/Icons'
 
 import Styles from './styles';
 
@@ -56,9 +56,9 @@ const DrawerTab=()=> {
             )
           })}
         />
-        {/* <Drawer.Screen name="Calendar" component={Attendance} />
-        <Drawer.Screen name="Profile" component={Attendance} />
-        <Drawer.Screen name="Daily Report" component={Attendance} /> */}
+        <Drawer.Screen name="Calendar" component={Calendarscreen} />
+        <Drawer.Screen name="Profile" component={Profilescreen} />
+        <Drawer.Screen name="Daily Report" component={Dailyreport} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

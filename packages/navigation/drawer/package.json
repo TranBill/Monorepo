@@ -23,7 +23,9 @@
   },
   "jest": {
     "preset": "react-native",
-    "transformIgnorePatterns":[]
+    "transformIgnorePatterns":[
+      "<rootDir>/node_modules/"
+    ]
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.16.7",

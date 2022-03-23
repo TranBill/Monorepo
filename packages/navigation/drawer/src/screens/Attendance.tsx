@@ -1,8 +1,8 @@
-import * as React from 'react';
-import Styles from '../styles';
-import {Feather} from '@expo/vector-icons';
-import moment from 'moment';
-import {Text, View,ScrollView} from 'react-native';
+import * as React from "react";
+import Styles from "../styles";
+import {Feather} from "@expo/vector-icons";
+import moment from "moment";
+import {Text, View,ScrollView} from "react-native";
 
 function AttendanceScreen() {
     setInterval(() => {

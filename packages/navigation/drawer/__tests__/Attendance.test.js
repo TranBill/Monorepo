@@ -1,8 +1,9 @@
-import React from 'react';
-import AttendanceScreen from '../src/screens/Attendance';
-import renderer from 'react-test-renderer';
+/* eslint-disable no-undef */
+import React from "react";
+import AttendanceScreen from "../src/screens/Attendance";
+import renderer from "react-test-renderer";
 
-test('renders correctly', () => {
+test("renders correctly", () => {
   const tree = renderer.create(<AttendanceScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

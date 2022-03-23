@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 // library
 import React from "react";
 import { View, Text, ScrollView, ScrollViewProps, Image } from "react-native";
@@ -7,7 +8,7 @@ import { MaterialIcons, FontAwesome, AntDesign, MaterialCommunityIcons } from "@
 // others
 import styles from "./styles";
 
-declare module "*.png"
+//declare module "*.png"
 export function DrawerContent (props: JSX.IntrinsicAttributes & ScrollViewProps & { children: React.ReactNode; } & React.RefAttributes<ScrollView>) {
   return (
         <View style= {{ flex: 1 }}>

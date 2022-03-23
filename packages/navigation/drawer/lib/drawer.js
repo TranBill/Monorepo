@@ -1,3 +1,4 @@
+/* eslint-disable react/no-children-prop */
 import * as React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { Octicons, Feather, MaterialCommunityIcons } from "@expo/vector-icons";
@@ -6,7 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { AttendanceScreen, Calendarscreen, Profilescreen, Dailyreport } from "./screens/index";
 import { DrawerContent } from "./Widgets/DrawerContent";
 import { MaterialIcon } from "./Widgets/Icons";
-import Styles from "./styles";
+import Styles from "./theme/styles";
 const Drawer = createDrawerNavigator();
 const DrawerTab = () => {
     return (React.createElement(NavigationContainer, null,

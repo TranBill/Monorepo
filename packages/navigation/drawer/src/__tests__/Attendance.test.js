@@ -1,8 +1,9 @@
+/* eslint-disable no-undef */
 import React from "react";
-import Calendarscreen from "../src/screens/Calendar";
+import AttendanceScreen from "../screens/index";
 import renderer from "react-test-renderer";
 
 test("renders correctly", () => {
-  const tree = renderer.create(<Calendarscreen />).toJSON();
+  const tree = renderer.create(<AttendanceScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

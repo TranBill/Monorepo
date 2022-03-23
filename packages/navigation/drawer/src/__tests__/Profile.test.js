@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 import React from "react";
-import AttendanceScreen from "../src/screens/Attendance";
+import Profilescreen from "../screens/Profile";
 import renderer from "react-test-renderer";
 
 test("renders correctly", () => {
-  const tree = renderer.create(<AttendanceScreen />).toJSON();
+  const tree = renderer.create(<Profilescreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

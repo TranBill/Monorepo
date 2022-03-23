@@ -23,13 +23,23 @@
   },
   "jest": {
     "preset": "react-native",
-    "transformIgnorePatterns":[
+    "transformIgnorePatterns": [
       "<rootDir>/node_modules/"
-    ]
+    ],
+    "setupFiles": [
+      "./src/jestSetup.js"
+    ],
+    "collectCoverage": true
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
     "@babel/preset-typescript": "^7.16.7",
+    "@testing-library/jest-native": "^4.0.4",
+    "@testing-library/react-native": "^9.0.0",
+    "@types/jest": "^27.4.1",
     "@types/react": "^17.0.40",
+    "@types/react-native": "^0.67.3",
+    "@types/react-test-renderer": "^17.0.1",
     "jest": "^27.5.1",
     "react": "^17.0.2",
     "typescript": "^4.6.2"

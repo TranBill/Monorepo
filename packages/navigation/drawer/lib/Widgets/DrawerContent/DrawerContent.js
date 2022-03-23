@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 // library
 import React from "react";
 import { View, Text, Image } from "react-native";
@@ -5,6 +6,7 @@ import { DrawerContentScrollView, DrawerItem } from "@react-navigation/drawer";
 import { MaterialIcons, FontAwesome, AntDesign, MaterialCommunityIcons } from "@expo/vector-icons";
 // others
 import styles from "./styles";
+//declare module "*.png"
 export function DrawerContent(props) {
     return (React.createElement(View, { style: { flex: 1 } },
         React.createElement(View, { style: styles.USerServicesSection },

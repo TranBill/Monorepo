@@ -10,10 +10,9 @@
   },
   "include": [
     "src/*"
-  ],
+, "src/theme/styles.ts"  ],
   "exclude": [
     "node_modules",
-    "lib",
-    "utils"
+    "lib"
   ]
 }
